@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-USER gitpod
+USER 1001
 
 ENV APP_VERSION="4.1" \
     APP="platformio-core"
