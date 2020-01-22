@@ -2,11 +2,6 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
-    init: pio platform install atmelavr
+  - init: pio platform install atmelavr
   - command: git config --global user.email 'epid@users.noreply.github.com'
   - command: gp open src/main.cpp
-
-vscode:
-  extensions:
-    - platformio.platformio-ide@1.10.0:aIt2v3YhW3veGlO/Uthh3Q==
