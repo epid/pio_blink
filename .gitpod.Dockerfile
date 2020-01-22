@@ -1,4 +1,4 @@
-FROM gitpod:workspace-full
+FROM FROM gitpod/workspace-full
 
 RUN python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
