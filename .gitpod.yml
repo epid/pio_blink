@@ -1,2 +1,6 @@
 { image: { file: .gitpod.Dockerfile } }
 
+
+vscode:
+  extensions:
+    - platformio.platformio-ide@1.10.0:aIt2v3YhW3veGlO/Uthh3Q==
