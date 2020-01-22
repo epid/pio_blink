@@ -1,5 +1,11 @@
-{ image: { file: .gitpod.Dockerfile } }
+image:
+  file: .gitpod.Dockerfile
 
+tasks:
+  - init: python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    init: pio platform install atmelavr
+  - command: git config --global user.email 'epid@users.noreply.github.com'
+  - command: gp open src/main.cpp
 
 vscode:
   extensions:
